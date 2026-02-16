@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    background: url(bmw-m3-angel-eyes-black-background-5k-3840x2160-896.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+}
+
+.navbar .menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar .menu ul li a:hover {
+    color: #f0f0f0;
+}
+
+.navbar .menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.navbar .menu ul li a:hover::after {
+    width: 100%;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: auto;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.Login {
+    padding: 10px 20px;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.Login:hover {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.Login a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #cccccc;
+}
+
+.login h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.remember-forgot label input {
+    margin-right: 8px;
+}
+
+.remember-forgot a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.remember-forgot a:hover {
+    color: #cccccc;
+}
+
+.login button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.login button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.register-link {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #cccccc;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+}
